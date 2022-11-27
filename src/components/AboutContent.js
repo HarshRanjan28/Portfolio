@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/aboutContent.css";
 const AboutContent = () => {
   return (
@@ -10,9 +9,22 @@ const AboutContent = () => {
           I am a react front-end developer. I create responsive secure websites
           for my clients
         </p>
-        <Link to="/contact">
-          <button className="btn">Contact</button>
-        </Link>
+        <h1>My Achievements:</h1>
+        <a
+          href="https://auth.geeksforgeeks.org/user/harsh1rn17me033/"
+          className="gfg"
+        >
+          Geeks for Geeks Problem Solving
+        </a>
+        <a
+          href="https://www.hackerrank.com/hnkranjan96?hr_r=1"
+          className="hackerrank"
+        >
+          Hackerrank Problem Solving
+        </a>
+        <a href="https://www.codingninjas.com/codestudio/profile/harsy">
+          Coding Ninjas Problem Solving
+        </a>
       </div>
       <div className="right">
         <div className="img-stack top">
