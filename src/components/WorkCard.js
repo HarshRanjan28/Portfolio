@@ -3,6 +3,7 @@ import "../styles/WorkCard.css";
 import WorkCradData from "../components/WorkCradData";
 const WorkCard = () => {
   const [data, setData] = useState(WorkCradData);
+  setData(data);
   return (
     <div className="work-container">
       <h1 className="project-heading">Projects</h1>
