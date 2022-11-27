@@ -17,9 +17,12 @@ const HeroImg = () => {
           <Link to="/project" className="btn">
             Projects
           </Link>
-          <Link to="/contact" className="btn-light">
-            Contact
-          </Link>
+          <a
+            href="https://novoresume.com/editor/resume/28cb3f00-6e24-11ed-a5ea-47c57cc27c24"
+            className="btn-light"
+          >
+            Download My Resume
+          </a>
         </div>
       </div>
     </div>
