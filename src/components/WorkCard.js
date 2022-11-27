@@ -1,33 +1,19 @@
-import React, { useState } from "react";
 import "../styles/WorkCard.css";
-import WorkCradData from "../components/WorkCradData";
-const WorkCard = () => {
-  const [data,setData] = useState(WorkCradData);
+const WorkCard = (props) => {
   return (
-    <div className="work-container">
-      <h1 className="project-heading">Projects</h1>
-      <div className="project-container">
-        {data.map((curData) => {
-          return (
-            <>
-              <div className="project-card">
-                <img src={curData.imgsrc} alt="" />
-                <h2 className="project-title">{curData.title}</h2>
-                <div className="pro-details">
-                  <p>{curData.text}</p>
-                  <div className="pro-btns">
-                    <a href={curData.View} className="btn">
-                      View
-                    </a>
-                    <a href={curData.Source} className="btn">
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </>
-          );
-        })}
+    <div className="project-card">
+      <img src={props.imgsrc} alt="" />
+      <h2 className="project-title">{props.title}</h2>
+      <div className="pro-details">
+        <p>{props.text}</p>
+        <div className="pro-btns">
+          <a href={props.view} className="btn">
+            View
+          </a>
+          <a href={props.source} className="btn">
+            Source
+          </a>
+        </div>
       </div>
     </div>
   );
